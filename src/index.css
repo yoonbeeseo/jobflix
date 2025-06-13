@@ -4,6 +4,8 @@
   --color-primary: var(--color-red-600);
   --color-bg: var(--color-zinc-900);
   --color-text: var(--color-zinc-300);
+
+  --breakpoint-mobile: 400px;
 }
 
 @layer base {

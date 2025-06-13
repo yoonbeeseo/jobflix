@@ -1,4 +1,5 @@
 import { IoChevronDown, IoLanguage } from "react-icons/io5";
+import LanguageButton from "./LanguageButton";
 
 const Header = () => {
   return (
@@ -8,11 +9,7 @@ const Header = () => {
           NETFLIX
         </button>
         <div className="flex gap-2">
-          <button className="border">
-            <IoLanguage />
-            <p className="hidden md:block">{"한국어"}</p>
-            <IoChevronDown />
-          </button>
+          <LanguageButton />
           <button className="bg-primary text-text px-6">로그인</button>
         </div>
       </div>
