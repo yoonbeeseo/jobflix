@@ -15,7 +15,7 @@ const App = () => {
   return (
     <Layout>
       <SplashScreen init={init} />
-      <div>App</div>
+      <div className="">App</div>
     </Layout>
   );
 };
