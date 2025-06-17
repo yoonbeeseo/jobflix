@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "./components/layout/Layout";
 import SplashScreen from "./components/layout/SplashScreen";
+import BeforeLayout from "./components/BeforeLogin/BeforeLayout";
 
 const App = () => {
   const [init, setInit] = useState(false);
@@ -15,7 +16,7 @@ const App = () => {
   return (
     <Layout>
       <SplashScreen init={init} />
-      <div className="">App</div>
+      <BeforeLayout />
     </Layout>
   );
 };
