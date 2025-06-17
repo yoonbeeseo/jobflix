@@ -7,10 +7,6 @@ const BeforeLayout = () => {
       <HeroSection />
       <div className="con">
         <Popcorn />
-        <p>asdfasd</p>
-        <p>asdfasd</p>
-        <p>asdfasd</p>
-        <p>asdfasd</p>
       </div>
     </main>
   );
