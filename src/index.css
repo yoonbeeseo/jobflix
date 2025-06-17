@@ -6,6 +6,7 @@
   --color-text: var(--color-zinc-300);
 
   --breakpoint-mobile: 400px;
+  --breakpoint-500: 500px;
 }
 
 @layer base {
