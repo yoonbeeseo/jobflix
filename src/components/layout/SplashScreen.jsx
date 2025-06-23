@@ -4,7 +4,7 @@ const SplashScreen = ({ init }) => {
   return (
     <div
       className={twMerge(
-        "h-screen flex items-center justify-center fixed w-full top-0 left-0 bg-bg transition-all duration-1000",
+        "h-screen flex items-center justify-center fixed w-full top-0 left-0 bg-bg transition-all duration-1000 z-50",
         init && "opacity-0 invisible"
       )}
     >
