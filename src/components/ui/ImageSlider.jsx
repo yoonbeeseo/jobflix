@@ -37,11 +37,35 @@ const ImageSlider = () => {
     };
   }, []);
 
+  const [n, setN] = useState(3);
+
+  useEffect(() => {
+    const fn = () => {
+      const width = window.innerWidth;
+      let n = 3;
+      if (width > 500 && width <= 768) {
+        n = 4;
+      } else if (width > 768 && width <= 1000) {
+        n = 6;
+      } else if (width > 1000) {
+        n = 8;
+      }
+
+      setN(n);
+    };
+
+    window.addEventListener("resize", fn);
+
+    return () => {
+      window.removeEventListener("resize", fn);
+    };
+  }, []);
+
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: n,
+    slidesToScroll: n,
     arrows: false,
   };
   return (
