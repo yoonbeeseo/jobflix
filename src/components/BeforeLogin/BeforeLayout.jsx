@@ -1,3 +1,4 @@
+import Accordion from "./Accordion";
 import HeroSection from "./HeroSection";
 import Popcorn from "./Popcorn";
 import ReasonSection from "./ReasonSection";
@@ -11,6 +12,7 @@ const BeforeLayout = () => {
         <Popcorn />
         <SlideSection />
         <ReasonSection />
+        <Accordion />
       </div>
     </main>
   );
