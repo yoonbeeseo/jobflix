@@ -17,6 +17,7 @@
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
     "tailwind-merge": "^3.3.0",
+    "tailwind-text-stroke": "^1.0.0",
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {

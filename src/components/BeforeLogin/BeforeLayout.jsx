@@ -1,5 +1,6 @@
 import HeroSection from "./HeroSection";
 import Popcorn from "./Popcorn";
+import SlideSection from "./SlideSection";
 
 const BeforeLayout = () => {
   return (
@@ -7,6 +8,7 @@ const BeforeLayout = () => {
       <HeroSection />
       <div className="con">
         <Popcorn />
+        <SlideSection />
       </div>
     </main>
   );

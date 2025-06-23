@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="con relative z-1 flex flex-col justify-center px-2">
         <div className="flex flex-col items-center gap-2 text-center font-light">
           <h1 className="font-black text-2xl">영화, 시리즈 등을 무제한으로</h1>
-          <p>7,000원으로 시작ㄴ하세요. 멤버십은 언제든지 해지 가능합니다.</p>
+          <p>7,000원으로 시작하세요. 멤버십은 언제든지 해지 가능합니다.</p>
           <p>
             시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일
             주소를 입력하세요.
