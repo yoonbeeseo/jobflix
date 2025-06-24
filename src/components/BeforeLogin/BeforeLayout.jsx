@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import Popcorn from "./Popcorn";
 import ReasonSection from "./ReasonSection";
 import SlideSection from "./SlideSection";
+import StartSection from "./StartSection";
 
 const BeforeLayout = () => {
   return (
@@ -13,6 +14,7 @@ const BeforeLayout = () => {
         <SlideSection />
         <ReasonSection />
         <Accordion />
+        <StartSection />
       </div>
     </main>
   );
