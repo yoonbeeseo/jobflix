@@ -9,6 +9,7 @@ const Input = ({
   className,
   labelClassName,
   containerClassName,
+  type,
 }) => {
   const [focused, setFocused] = useState(false);
   return (
@@ -29,7 +30,7 @@ const Input = ({
       )}
       <input
         id={id}
-        type="text"
+        type={type ?? "text"}
         value={value}
         onChange={onChange}
         className={twMerge(

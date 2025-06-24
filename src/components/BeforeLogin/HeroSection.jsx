@@ -1,10 +1,12 @@
 import { IoChevronForward } from "react-icons/io5";
 import Input from "../ui/Input";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 const HeroSection = () => {
   const [value, setValue] = useState("");
 
+  const navi = useNavigate();
   return (
     <div className="bg-[url(https://cdn.pixabay.com/photo/2016/03/07/00/00/cinema-1241422_1280.jpg)] min-h-[50vh] bg-cover relative after:absolute after:size-full after:bg-black/60 after:top-0 after:left-0 flex justify-center">
       <div className="con relative z-1 flex flex-col justify-center px-2">
@@ -16,7 +18,19 @@ const HeroSection = () => {
             주소를 입력하세요.
           </p>
         </div>
-        <div className="flex flex-col items-center mobile:flex-row gap-2 mt-5">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (value.length > 0) {
+              localStorage.setItem(
+                "savedData",
+                JSON.stringify({ email: value })
+              );
+              navi("/signin");
+            }
+          }}
+          className="flex flex-col items-center mobile:flex-row gap-2 mt-5"
+        >
           <div className="flex-1 w-full">
             <Input
               id={"first-email"}
@@ -28,7 +42,7 @@ const HeroSection = () => {
           <button className="bg-primary pl-3 h-12">
             시작하기 <IoChevronForward />
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );
