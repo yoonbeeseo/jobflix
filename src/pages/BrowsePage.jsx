@@ -11,7 +11,7 @@ const BrowsePage = ({ user, setUser, setSelectedProfile }) => {
 
   const navi = useNavigate();
   return (
-    <div className="flex flex-col justify-center min-h-screen">
+    <div className="flex flex-col justify-center min-h-screen items-center">
       {isAddingProfile ? (
         <form
           onSubmit={(e) => {
