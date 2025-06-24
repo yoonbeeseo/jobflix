@@ -1,5 +1,6 @@
 import { IoChevronDown, IoLanguage } from "react-icons/io5";
 import LanguageButton from "./LanguageButton";
+import { Link } from "react-router";
 
 const Header = () => {
   return (
@@ -10,7 +11,9 @@ const Header = () => {
         </button>
         <div className="flex gap-2">
           <LanguageButton />
-          <button className="bg-primary text-text px-6">로그인</button>
+          <Link to="/signin" className="bg-primary text-text px-6">
+            로그인
+          </Link>
         </div>
       </div>
     </header>
